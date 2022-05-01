@@ -19,7 +19,7 @@ function App() {
       dispatch({
         type: ACTIONS.SET_DIRECTIONS_SERVICE_RESPONSE,
         duration: response.routes[0].legs[0].duration.text,
-        distance: response.routes[0].legs[0].distance.text,
+        distance: response.routes[0].legs[0].distance.value,
         directionsResponse: response,
       });
       dispatch({

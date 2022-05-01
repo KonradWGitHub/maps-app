@@ -10,20 +10,15 @@ class RouteData extends Component {
           <li>Origin: {directions.origin}</li>
           <li>Destination: {directions.destination}</li>
           <li>Duration: {duration}</li>
+          <li>Days to travel the route: {Math.ceil(distance / 800000)}</li>
+          <li>Distance: {Math.floor(distance / 1000)} km</li>
           <li>
-            Days to travel the route:{" "}
-            {Math.ceil(parseInt(distance.split(" ")[0]) / 800)}
-          </li>
-          <li>Distance: {distance}</li>
-          <li>
-            Total price:{" "}
-            {Math.round(
-              (1.1 *
-                (parseInt(price) * parseInt(distance.split(" ")[0]) +
-                  Math.ceil(parseInt(distance.split(" ")[0]) / 800) * 1000) +
-                Number.EPSILON) *
-                100
-            ) / 100}{" "}
+            Total price:
+            {Math.ceil(
+              1.1 *
+                (Number(price) * Math.floor(distance / 1000) +
+                  Math.ceil(distance / 800000) * 1000)
+            )}{" "}
             zł
           </li>
         </ul>
