@@ -36,6 +36,7 @@ input:focus {
 .navbar--link:hover {
   color: rgba(50, 98, 168, 1);
   background-color: white;
+  text-decoration: none;
 }
 
 .map-display {
@@ -153,6 +154,7 @@ input:focus {
 
 .adress--link:hover {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .adress--btn {
@@ -191,4 +193,5 @@ input:focus {
 .history--link:hover {
   color: white;
   background-color: rgba(50, 98, 168, 1);
+  text-decoration: none;
 }
