@@ -1,38 +1,194 @@
-.App {
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+}
+
+.navbar {
+  position: relative;
+  background-color: rgba(50, 98, 168, 1);
+  color: white;
+  padding: 5px 30px 5px 30px;
+  margin: 0px;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  box-shadow: 0px 4px 25px -7px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar--link {
+  color: inherit;
+  letter-spacing: 0px;
+  font-weight: 300;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+.navbar--link:hover {
+  color: rgba(50, 98, 168, 1);
+  background-color: white;
+}
+
+.map-display {
+  width: 100%;
+}
+
+.map-display--alert {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 4vh;
+  transform: translate(-50%, -50%);
+}
+
+.map-display-box {
+  position: absolute;
+  top: 3vh;
+  left: 2%;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0px 4px 25px -7px rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-display-box--form {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.map-display-box--input-label {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.map-display-box--input {
+  border: none;
+  border-bottom: 1px rgba(50, 98, 168, 1) solid;
+  margin: 0.2em;
+}
+
+.map-display-box--ul-title {
+  font-weight: 500;
+  margin: 0.5em;
+}
+
+.map-display-box--btn {
+  border: none;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: rgba(50, 98, 168, 1);
+  color: white;
+  font-weight: 300;
+  font-size: 0.8em;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.map-display-box--btn:hover {
+  opacity: 0.8;
+}
+
+.map-display-box ul {
+  margin: 0px;
+  padding-left: 1em;
+}
+
+.map-display-box li {
+  list-style: none;
+}
+
+.adress-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px rgba(50, 98, 168, 1) solid;
+  box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.adress--form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.adress--input {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.adress--link {
+  border: none;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 0.2em;
+  background-color: rgba(50, 98, 168, 1);
   color: white;
+  text-decoration: none;
+  font-weight: 300;
+  opacity: 1;
+  transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.adress--link:hover {
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.adress--btn {
+  border: none;
+  border-radius: 1em;
+  margin: 0.2em;
+  padding: 0.5em;
+  background-color: rgba(50, 98, 168, 1);
+  color: white;
+  font-weight: 300;
+  font-size: 1.2em;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.adress--btn:active {
+  opacity: 0.5;
+}
+
+.history-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.history--link {
+  text-decoration: none;
+  color: rgba(50, 98, 168, 1);
+  font-size: 0.8em;
+  margin: 0.2em;
+  padding: 0.2em;
+  border: 1px solid;
+  border-radius: 1em;
+  transition: 0.2s;
+}
+
+.history--link:hover {
+  color: white;
+  background-color: rgba(50, 98, 168, 1);
 }
